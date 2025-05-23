@@ -26,6 +26,7 @@ _Critique Prompting:_ Enforces self-review and refinement loops.
 
 _Expert Simulation:_ Frames responses as if from a senior developer.
 
+
 **🧠 Multi-LLM Backend (Local Inference):**
 Instead of relying on cloud-based APIs, I leveraged locally hosted LLMs using Ollama for full control, reproducibility, and offline experimentation (along with LLMs using APIs):
 
@@ -34,6 +35,7 @@ Instead of relying on cloud-based APIs, I leveraged locally hosted LLMs using Ol
 -> LLaMA3 (via Ollama)
 
 These models are wrapped using modular Python interfaces that support prompt injection, streaming, and output normalization.
+
 
 **📊 Evaluation Metrics:**
 I computed the following automatic evaluation metrics for objective comparison:
@@ -45,6 +47,7 @@ I computed the following automatic evaluation metrics for objective comparison:
 -> METEOR (semantic-aware matching)
 
 -> BERTScore (contextual embedding similarity using sentence-transformers)
+
 
 # 📁 Project Structure:
 
