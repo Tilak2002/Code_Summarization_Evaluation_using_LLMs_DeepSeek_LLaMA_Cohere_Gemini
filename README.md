@@ -2,7 +2,7 @@
 This research-oriented project investigates the capabilities of modern Large Language Models (LLMs)—specifically those deployed locally via Ollama (e.g., DeepSeek, LLaMA3)—for automated code summarization across multiple programming languages. The core objective is to systematically evaluate the impact of advanced prompting strategies on summarization performance across Python, JavaScript, and Java, using industry-standard evaluation metrics.
 
 🚀 Key Highlights
-🔧 Prompt Engineering Techniques
+🔧 Prompt Engineering Techniques:
 We implement and benchmark five prompting strategies designed to optimize LLM performance for source code summarization:
 
 Zero-Shot: Direct summarization without context.
