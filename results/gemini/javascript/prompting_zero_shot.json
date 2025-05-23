@@ -1,0 +1,27 @@
+[
+    {
+        "function": "function (state, action) {\n    return _.defaults({\n      isValidating: action.isValidating,\n      lastAction: IS_VALIDATING\n    }, state)\n  }",
+        "prompt_type": "Zero-Shot",
+        "gemini_summary": "// Updates the state with validation status and the last action type."
+    },
+    {
+        "function": "function addWidgetForFilter (view, filter, editModeHint) {\n  var gridster = view._widgetsGridster;\n  var row = filter.row || 1;\n  var col = filter.col || 1;\n  var sizeX = filter.size_x || 3;\n  var sizeY = filter.size_y || 3;\n\n  var el = gridster.add_widget('<div class=\"widgetOuterFrame\"></div>', sizeX, sizeY, col, row);\n  var frameView = new WidgetFrameView({\n    model: filter\n  });\n\n  // render, and render content of widget frame\n  view.renderSubview(frameView, el[0]);\n  frameView.renderContent();\n\n  // link element and view so we can:\n  // a) on remove, get to the HTMLElement from the WidgetFrameView\n  // b) on resize, get to the WidgetFrameView from the HTMLElement\n  frameView.gridsterHook = el[0];\n  $(el[0]).data('spotWidgetFrameView', frameView);\n\n  // try to initialize and render possibly present data\n  // only follow editModeHint when the widget is configured, default to true\n  var chartView = frameView.widget;\n  chartView.model.updateConfiguration();\n  if (chartView.model.isConfigured) {\n    if (!filter.isInitialized) {\n      filter.initDataFilter();\n    }\n    if (!chartView.isInitialized) {\n      chartView.initChart();\n    }\n    chartView.update();\n\n    frameView.editMode = editModeHint;\n  } else {\n    // widget is not configured, ignore editModeHint\n    // and always go to edit mode\n    frameView.editMode = true;\n  }\n\n  filter.on('newData', function () {\n    chartView.update();\n  });\n}",
+        "prompt_type": "Zero-Shot",
+        "gemini_summary": "// Adds a widget to the grid based on the provided filter, rendering its frame and content, and managing its edit mode and data updates."
+    },
+    {
+        "function": "function inRange (value, min, max) {\n  const int = parseInt(value, 10)\n\n  return (\n    `${int}` === `${value.replace(/^0/, '')}` &&\n    int >= min &&\n    int <= max\n  )\n}",
+        "prompt_type": "Zero-Shot",
+        "gemini_summary": "// Checks if a value is an integer within a specified range and doesn't have leading zeros."
+    },
+    {
+        "function": "function markdown(options) {\n  return new Remarkable(extend({\n    breaks: false,\n    html: true,\n    langPrefix: 'lang-',\n    linkify: true,\n    typographer: false,\n    xhtmlOut: false\n  }, options));\n}",
+        "prompt_type": "Zero-Shot",
+        "gemini_summary": "// Creates a Remarkable markdown parser instance with configurable options."
+    },
+    {
+        "function": "function partitionValueToIndex (partition, value) {\n  var group;\n\n  if (!partition) {\n    // no(sub)partitioning return first element\n    return 0;\n  }\n\n  // with (sub)partitioning\n  group = partition.groups.get(value, 'value');\n\n  if (group) {\n    // string in partition\n    return group.groupIndex;\n  } else {\n    // string not in partition\n    return -1;\n  }\n}",
+        "prompt_type": "Zero-Shot",
+        "gemini_summary": "// Returns the index of the partition group containing the given value, or -1 if not found."
+    }
+]
