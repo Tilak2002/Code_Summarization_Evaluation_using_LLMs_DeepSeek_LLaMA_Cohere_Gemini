@@ -75,5 +75,8 @@ It also contains the python scripts to download the dataset from web and also to
 
 **Preprocessing Steps:** Length filtering, deduplication, normalization
 
+# 📄 Report:
 
+📘 IEEE-style academic paper included in /report, formatted for 2-column publication. Includes dataset breakdowns, prompt templates, evaluation results, statistical significance analysis, and limitations.
 
+# 🤝 Contributor Tilak Brahmbhatt (202411016) — M.Tech ICT (Software Systems), DA-IICT
