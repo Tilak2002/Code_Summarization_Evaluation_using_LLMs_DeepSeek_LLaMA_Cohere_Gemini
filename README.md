@@ -2,9 +2,9 @@
 This research-oriented project investigates the capabilities of modern Large Language Models (LLMs)—specifically those deployed locally via Ollama (e.g., DeepSeek, LLaMA3)—for automated code summarization across multiple programming languages. The core objective is to systematically evaluate the impact of advanced prompting strategies on summarization performance across Python, JavaScript, and Java, using industry-standard evaluation metrics.
 
 # 📌 Key Features:
-🔍 Prompt Engineering: Implements five techniques — Zero-Shot, Few-Shot, Chain-of-Thought, Critique, and Expert.
+🔍 **_Prompt Engineering_**: Implements five techniques — Zero-Shot, Few-Shot, Chain-of-Thought, Critique, and Expert.
 
-🤖 Multi-LLM Support: Compare summaries across Cohere(via API), Gemini(via API), DeepSeek (via Ollama Framework), and LLaMA3 (via Ollama Framework).
+🤖 **_Multi-LLM Support_**_: Compare summaries across Cohere(via API), Gemini(via API), DeepSeek (via Ollama Framework), and LLaMA3 (via Ollama Framework).
 
 📊 Evaluation Metrics: BLEU, ROUGE-L, METEOR, BERTScore.
 
