@@ -46,6 +46,11 @@ I computed the following automatic evaluation metrics for objective comparison:
 
 -> BERTScore (contextual embedding similarity using sentence-transformers)
 
+# 📁 Project Structure:
+
+code-summarization/ ├── data/ # Dataset download & preprocessing ├── models/ # LLM wrappers (deepseek, llama) ├── prompts/ # Prompt templates & techniques ├── evaluation/ # Metric calculations and statistical tests ├── results/ # Summary outputs and evaluation results └── main.py # Pipeline entry point
+
+Note: "preprocessed_data" and "raw_data" can be downloaded from drive link given here https://drive.google.com/drive/folders/1pUfbv9NSXXTbkQxr63yhAz6D0vGs7iOV?usp=sharing
 
 # 🧪 Evaluation Pipeline:
 
@@ -58,4 +63,15 @@ I computed the following automatic evaluation metrics for objective comparison:
 4. **Run statistical tests** (paired t-test, ANOVA) to assess significance.
 
 5. **Export results** to JSON and render in report/visualizations.
+
+
+# 📚 Datasets:
+
+**Source:** CodeXGLUE (https://github.com/microsoft/CodeXGLUE)
+
+**Languages:** Python (251k+), JavaScript (58k+), Java (164k+)
+
+**Preprocessing Steps:** Length filtering, deduplication, normalization
+
+
 
