@@ -71,7 +71,7 @@ It also contains the python scripts to download the dataset from web and also to
 
 **Source:** CodeXGLUE (https://github.com/microsoft/CodeXGLUE)
 
-**Languages:** Python (251k+), JavaScript (58k+), Java (164k+)
+**Languages:** Python (251k+ functions), JavaScript (58k+ functions), Java (164k+ functions)
 
 **Preprocessing Steps:** Length filtering, deduplication, normalization
 
