@@ -52,6 +52,8 @@ code-summarization/ ├── data/ # Dataset download & preprocessing ├──
 
 Note: "preprocessed_data" and "raw_data" can be downloaded from drive link given here https://drive.google.com/drive/folders/1pUfbv9NSXXTbkQxr63yhAz6D0vGs7iOV?usp=sharing
 
+It also contains the python scripts to download the dataset from web and also to preprocess the dataset, which is used to generate the summaries.
+
 # 🧪 Evaluation Pipeline:
 
 1. **Preprocess datasets** from CodeXGLUE.
