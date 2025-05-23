@@ -29,19 +29,33 @@ _Expert Simulation:_ Frames responses as if from a senior developer.
 **🧠 Multi-LLM Backend (Local Inference):**
 Instead of relying on cloud-based APIs, I leveraged locally hosted LLMs using Ollama for full control, reproducibility, and offline experimentation (along with LLMs using APIs):
 
-DeepSeek-Coder (via Ollama)
+-> DeepSeek-Coder (via Ollama)
 
-LLaMA3 (via Ollama)
+-> LLaMA3 (via Ollama)
 
 These models are wrapped using modular Python interfaces that support prompt injection, streaming, and output normalization.
 
 **📊 Evaluation Metrics:**
 I computed the following automatic evaluation metrics for objective comparison:
 
-BLEU (n-gram overlap)
+-> BLEU (n-gram overlap)
 
-ROUGE-L (longest common subsequence)
+-> ROUGE-L (longest common subsequence)
 
-METEOR (semantic-aware matching)
+-> METEOR (semantic-aware matching)
 
-BERTScore (contextual embedding similarity using sentence-transformers)
+-> BERTScore (contextual embedding similarity using sentence-transformers)
+
+
+# 🧪 Evaluation Pipeline:
+
+1. **Preprocess datasets** from CodeXGLUE.
+
+2. **Generate summaries** using each LLM with different prompting strategies.
+
+3. **Evaluate quality** using BLEU, ROUGE, METEOR, and BERTScore.
+
+4. **Run statistical tests** (paired t-test, ANOVA) to assess significance.
+
+5. **Export results** to JSON and render in report/visualizations.
+
