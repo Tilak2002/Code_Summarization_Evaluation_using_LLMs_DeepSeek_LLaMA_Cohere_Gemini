@@ -3,9 +3,13 @@ This research-oriented project investigates the capabilities of modern Large Lan
 
 # 📌 Key Features:
 🔍 Prompt Engineering: Implements five techniques — Zero-Shot, Few-Shot, Chain-of-Thought, Critique, and Expert.
+
 🤖 Multi-LLM Support: Compare summaries across Cohere(via API), Gemini(via API), DeepSeek (via Ollama Framework), and LLaMA3 (via Ollama Framework).
+
 📊 Evaluation Metrics: BLEU, ROUGE-L, METEOR, BERTScore.
+
 🧪 Dataset Coverage: Experiments span Python, JavaScript, and Java using CodeXGLUE and CodeSearchNet Datasets.
+
 📑 IEEE-Style Report: Comprehensive 12+ page academic report with reproducible experiments.
 
 # 🚀 Key Highlights:
